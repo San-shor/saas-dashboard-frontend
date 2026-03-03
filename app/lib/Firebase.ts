@@ -7,13 +7,14 @@ import { getStorage } from "firebase/storage";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
 const firebaseConfig = {
-  apiKey: "AIzaSyC6El1Pc7cNe8HadgR0l5JV3KirV_zOnmI",
-  authDomain: "saas-dashboard-8a9df.firebaseapp.com",
-  projectId: "saas-dashboard-8a9df",
-  storageBucket: "saas-dashboard-8a9df.firebasestorage.app",
-  messagingSenderId: "373046937631",
-  appId: "1:373046937631:web:75d0fa59e51d5aa17ded2a"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
 
